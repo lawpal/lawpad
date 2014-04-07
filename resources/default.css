@@ -1,0 +1,16 @@
+#homeScreen {
+  background-color: #f2f2f2;
+}
+
+navigation-bar {
+  background-color: #444444;
+}
+
+navigation-bar title {
+  color: #fdfdfd;
+}
+
+navigation-bar right-bar-button {
+  color: #fdfdfd;
+  background-left-padding: 60px;
+}

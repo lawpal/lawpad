@@ -1,0 +1,206 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerAllowsOverdrawKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerAnimationCurveKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerAnimationDurationKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerAnimationTypeKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerDisablesFrontViewInteractionKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerQuickSwipeToggleVelocityKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerRecognizesPanningOnFrontViewKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='PKRevealControllerRecognizesResetTapOnFrontViewKey' type='@'/>
+<enum name='PKRevealControllerAnimationTypeStatic' value='0'/>
+<enum name='PKRevealControllerFocusesFrontViewController' value='2'/>
+<enum name='PKRevealControllerFocusesLeftViewController' value='0'/>
+<enum name='PKRevealControllerFocusesLeftViewControllerInPresentationMode' value='3'/>
+<enum name='PKRevealControllerFocusesRightViewController' value='1'/>
+<enum name='PKRevealControllerFocusesRightViewControllerInPresentationMode' value='4'/>
+<enum name='PKRevealControllerTypeBoth' value='3'/>
+<enum name='PKRevealControllerTypeLeft' value='1'/>
+<enum name='PKRevealControllerTypeNone' value='0'/>
+<enum name='PKRevealControllerTypeRight' value='2'/>
+<class name='PKRevealController'>
+<method selector='enterPresentationModeAnimated:completion:'>
+<arg declared_type='BOOL' index='0' name='animated' type='B'/>
+<arg declared_type='PKDefaultCompletionHandler' function_pointer='true' index='1' name='completion' type='@?'>
+<arg declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='focusedController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='frontViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='hasLeftViewController'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='hasRightViewController'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='initWithFrontViewController:leftViewController:options:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='leftViewController' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFrontViewController:leftViewController:rightViewController:options:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='leftViewController' type='@'/>
+<arg declared_type='UIViewController*' index='2' name='rightViewController' type='@'/>
+<arg declared_type='NSDictionary*' index='3' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithFrontViewController:rightViewController:options:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='rightViewController' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isPresentationModeActive'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='leftViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='options'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='resignPresentationModeEntirely:animated:completion:'>
+<arg declared_type='BOOL' index='0' name='entirely' type='B'/>
+<arg declared_type='BOOL' index='1' name='animated' type='B'/>
+<arg declared_type='PKDefaultCompletionHandler' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='revealControllerWithFrontViewController:leftViewController:options:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='leftViewController' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='revealControllerWithFrontViewController:leftViewController:rightViewController:options:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='leftViewController' type='@'/>
+<arg declared_type='UIViewController*' index='2' name='rightViewController' type='@'/>
+<arg declared_type='NSDictionary*' index='3' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='revealControllerWithFrontViewController:rightViewController:options:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='UIViewController*' index='1' name='rightViewController' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='options' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='revealPanGestureRecognizer'>
+<retval declared_type='UIPanGestureRecognizer*' type='@'/>
+</method>
+<method selector='revealResetTapGestureRecognizer'>
+<retval declared_type='UITapGestureRecognizer*' type='@'/>
+</method>
+<method selector='rightViewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='setFrontViewController:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFrontViewController:focusAfterChange:completion:'>
+<arg declared_type='UIViewController*' index='0' name='frontViewController' type='@'/>
+<arg declared_type='BOOL' index='1' name='focus' type='B'/>
+<arg declared_type='PKDefaultCompletionHandler' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftViewController:'>
+<arg declared_type='UIViewController*' index='0' name='leftViewController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMinimumWidth:maximumWidth:forViewController:'>
+<arg declared_type='CGFloat' index='0' name='minWidth' type='f' type64='d'/>
+<arg declared_type='CGFloat' index='1' name='maxWidth' type='f' type64='d'/>
+<arg declared_type='UIViewController*' index='2' name='controller' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOptions:'>
+<arg declared_type='NSDictionary*' index='0' name='options' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRevealPanGestureRecognizer:'>
+<arg declared_type='UIPanGestureRecognizer*' index='0' name='revealPanGestureRecognizer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRevealResetTapGestureRecognizer:'>
+<arg declared_type='UITapGestureRecognizer*' index='0' name='revealResetTapGestureRecognizer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightViewController:'>
+<arg declared_type='UIViewController*' index='0' name='rightViewController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showViewController:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showViewController:animated:completion:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<arg declared_type='BOOL' index='1' name='animated' type='B'/>
+<arg declared_type='PKDefaultCompletionHandler' function_pointer='true' index='2' name='completion' type='@?'>
+<arg declared_type='BOOL' type='B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='state'>
+<retval declared_type='PKRevealControllerState' type='I' type64='Q'/>
+</method>
+<method selector='type'>
+<retval declared_type='PKRevealControllerType' type='I' type64='Q'/>
+</method>
+</class>
+<class name='PKRevealControllerContainerView'>
+<method selector='disableUserInteractionForContainedView'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='enableUserInteractionForContainedView'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='hasShadow'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='initForController:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initForController:shadow:'>
+<arg declared_type='UIViewController*' index='0' name='controller' type='@'/>
+<arg declared_type='BOOL' index='1' name='hasShadow' type='B'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='refreshShadowWithAnimationDuration:'>
+<arg declared_type='NSTimeInterval' index='0' name='duration' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setViewController:'>
+<arg declared_type='UIViewController*' index='0' name='viewController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='viewController'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+</class>
+<class name='UIViewController'>
+<method selector='revealController'>
+<retval declared_type='PKRevealController*' type='@'/>
+</method>
+<method selector='setRevealController:'>
+<arg declared_type='PKRevealController*' index='0' name='revealController' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+</signatures>
