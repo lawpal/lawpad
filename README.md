@@ -161,10 +161,22 @@ class HelpScreen < PM::TableScreen
 end
 ```
 
+Though the LawPad application is in a bit of flux right now as the backbone structure of it is fleshed out, the key points to navigating the codebase are:
+
+1. Entry point is `app/app_delegate.rb`, and more specifically in `on_load`.
+2. `open` (provided by ProMotion) opens screens.
+3. `PM::TableScreen` is an incredibly simple way to pipe data into a view that looks like a list (but one that Apple refers to as a table.)
+4. In RubyMotion, Ruby convention is followed. This means no camelCase unless you have to use it (e.g. by calling Objective-C code).
+
 ## More Libraries
 
 - [Motion Wrappers](http://rubymotion-wrappers.com/)
 - [BubbleWrap](https://github.com/rubymotion/BubbleWrap) (Swiss army knife/utility belt. Includes things like an HTTP library and gesture recognizer)
+- [Formotion](https://github.com/clayallsopp/formotion) (Define forms using a Ruby `Hash`)
+
+### Pixate Freestyle
+
+Pixate [Freestyle](http://www.pixate.com/) lets you use familiar CSS syntax to style iOS views. It works with RubyMotion, and this application is already configured for it. See `resources/default.css`.
 
 # Further reading
 
