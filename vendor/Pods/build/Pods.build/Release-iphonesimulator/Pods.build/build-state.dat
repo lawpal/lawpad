@@ -1,85 +1,0 @@
-TPods
-v6
-r1
-cCheck dependencies
-cCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/libPods.a normal i386
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000533650E00000000000A90C10
-t1396068576
-s11078672
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
-c0000000053119F8A0000000000000198
-t1393663882
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
-c000000005336514800000000000003B4
-t1396068680
-s948
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c000000005336516B000000000000019E
-t1396068715
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
-c000000005336528C0000000000000ADC
-t1396069004
-s2780
-
-N/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/libPods-PKRevealController.a
-c000000005342B63E000000000004B330
-t1396880958
-s308016
-
-N/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/libPods.a
-t2
-s0
-
-N/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m
-c000000005342B5A20000000000000070
-t1396880802
-s112
-
-N/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
-t1396880816
-s3156
-
-N/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
-c000000005342B4E40000000000000092
-t1396880612
-s146
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesaa99e1beedf2b841^c938e2beedf2b841^---0#1#1#--18"Check dependencies36"D216459B-4F07-4609-896E-7DF249D9C74B-
-
-CCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s418573616.617454
-e418573616.658332
-r1
-xCompileC
-xbuild/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
-x/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m174"CompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5c3a9e30edf2b841^c688a830edf2b841^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m0000000000000000^4166"CompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/adelevie/.rbenv/versions/1.9.3-p429/lib/ruby/gems/1.9.1/bin:/Users/adelevie/.rbenv/versions/1.9.3-p429/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/opt/local/bin:/opt/local/sbin:/Users/adelevie/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/mysql/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:/Users/adelevie/programming/android/android-sdk-macosx/tools:/Users/adelevie/programming/android/android-sdk-macosx/platform-tools:/usr/local/sbin:/usr/local/scala/bin:/Users/adelevie/go/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/include -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods/Headers -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods/Headers/PKRevealController -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources -F/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods/Headers -isystem /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods/Headers/PKRevealController -MMD -MT dependencies -MF /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/Pods-dummy.m -o /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"C2BC474A-DB08-47E1-A926-F60B29F7A131-
-bFC20F330-CEB9-4537-BFC4-9A39E46A1F40
-
-CLibtool /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/libPods.a normal i386
-s418573758.884791
-e418573758.899070
-r1
-xLibtool
-x/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/libPods.a
-xnormal
-xi386
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Libtool .build/libPods.a normal i38636"Libtool .build/libPods.a normal i3868ba7e2beedf2b841^b22ae6beedf2b841^---0#0#1#--1499"Libtool .build/libPods.a normal i386    cd /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/adelevie/.rbenv/versions/1.9.3-p429/lib/ruby/gems/1.9.1/bin:/Users/adelevie/.rbenv/versions/1.9.3-p429/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/opt/local/bin:/opt/local/sbin:/Users/adelevie/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/mysql/bin:/Library/Frameworks/JRuby.framework/Versions/Current/bin:/Users/adelevie/programming/android/android-sdk-macosx/tools:/Users/adelevie/programming/android/android-sdk-macosx/platform-tools:/usr/local/sbin:/usr/local/scala/bin:/Users/adelevie/go/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build -filelist /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-PKRevealController -o /Users/adelevie/programming/lawpal/lawpad/LawPad/vendor/Pods/.build/libPods.a36"B2CDF208-BA4B-4733-B462-3FC5482DFC41-
-b9D123C32-EDE5-45F7-A050-5773161F545A
-
