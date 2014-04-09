@@ -182,3 +182,7 @@ Pixate [Freestyle](http://www.pixate.com/) lets you use familiar CSS syntax to s
 
 Now that you've made it this far, this [site](http://rubymotion-tutorial.com/) contains a more reference-like set of tutorials including lessons on views, controllers, tables, and testing.
 
+# Mavericks Users
+
+Install rbenv, then install 1.9.3-p429 and `$ 1.9.3-p429 > .rbenv-version`.
+

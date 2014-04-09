@@ -2,6 +2,7 @@
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/ios'
 require "rubygems"
+require "bubble-wrap/core"
 require "motion-pixatefreestyle"
 require "motion-hockeyapp"
 require 'bundler'
