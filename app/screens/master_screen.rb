@@ -1,80 +1,47 @@
 class MasterScreen < PM::GroupedTableScreen
   title "LawPal"
-  def on_load
-    @table_data = [
+  attr_accessor :matter_items
+
+  def matter_item_categories
+    categories = @matter_items.map do |mi|
+      mi[:category]
+    end
+
+    # remove "Uncategorized"
+    categories.delete("Uncategorized")
+    # re-insert "Uncategorized" so that it is first
+    categories.insert(0, "Uncategorized")
+
+    categories
+  end
+
+  def matter_item_to_cell(matter_item)
+    {
+      title: matter_item[:name],
+      action: :matter_item_tapped,
+      arguments: matter_item
+    }
+  end
+
+  def matter_item_sections
+    matter_item_categories.map do |category|
       {
-        title: false,
-        cells: []
-      },
-      {
-        title: "Uncategorized",
-        cells: [
-          {
-            title: "New Item",
-            action: :new_item_tapped,
-            arguments: {}
-          },
-          {
-            title: "Add Category",
-            action: :add_category_tapped,
-            arguments: {}
-          },
-          {
-            title: "Checklist Item One",
-            action: :checklist_item_tapped,
-            arguments: {}
-          }
-        ]
-      },
-      {
-        title: "My Category 1",
-        cells: [
-          {
-            title: "New Item",
-            action: :new_item_tapped,
-            arguments: {}
-          },
-          {
-            title: "Edit Category",
-            action: :add_category_tapped,
-            arguments: {}
-          },
-          {
-            title: "Delete Category",
-            acttion: :delete_category_tapped,
-            arguments: {}
-          },
-          {
-            title: "Checklist Item Two",
-            action: :checklist_item_tapped,
-            arguments: {}
-          },
-          {
-            title: "Checklist Item Three",
-            action: :checklist_item_tapped,
-            arguments: {}
-          }
-        ]  
-      },
-      {
-        title: "My Category 2",
-        cells: [
-          {
-            title: "TODO: Use exanding cell accessories"
-          },
-          {
-            title: "Checklist Item Four",
-            action: :checklist_item_tapped,
-            arguments: {}
-          },
-          {
-            title: "Checklist Item Five",
-            action: :checklist_item_tapped,
-            arguments: {}
-          }
-        ]  
+        title: category,
+        cells: @matter_items.select {|i| i[:category] == category}.map {|i| matter_item_to_cell(i)}
       }
-    ]
+    end
+  end
+
+  def empty_section
+    {
+      title: false,
+      cells: []
+    }
+  end
+
+  def on_load
+    @table_data = matter_item_sections
+    @table_data.insert(0, empty_section)
   end
 
   def table_data
