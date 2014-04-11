@@ -12,6 +12,8 @@ class MasterScreen < PM::GroupedTableScreen
     # re-insert "Uncategorized" so that it is first
     categories.insert(0, "Uncategorized")
 
+    categories.uniq!
+
     categories
   end
 
@@ -40,6 +42,7 @@ class MasterScreen < PM::GroupedTableScreen
   end
 
   def on_load
+    p matter_item_categories
     @table_data = matter_item_sections
     @table_data.insert(0, empty_section)
   end
@@ -48,11 +51,11 @@ class MasterScreen < PM::GroupedTableScreen
     @table_data ||= []
   end
 
-  def checklist_item_tapped(checklist_item)
-    checklist_item_screen = ChecklistItemScreen.new
-    checklist_item_screen.checklist_item = {
-
-    }
-    open checklist_item_screen, in_detail: true
+  def matter_item_tapped(matter_item)
+    matter_item_screen = MatterItemScreen.new(nav_bar: true)
+    matter_item_screen.title = matter_item[:name]
+    matter_item_screen.matter_item = matter_item
+    
+    open matter_item_screen, in_detail: true
   end
 end

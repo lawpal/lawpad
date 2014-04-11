@@ -1,13 +1,3 @@
-def categories
-  result = []
-  2.times do
-    result << random_word
-  end
-  result << "Uncategorized"
-
-  result
-end
-
 def random_word
   %w[
       Lorem ipsum dolor sit amet consectetur adipisicing elit 
@@ -17,6 +7,12 @@ def random_word
       Duis aute irure dolor in reprehenderit in voluptate velit 
       esse cillum dolore eu fugiat nulla pariatur
   ].sample
+end
+
+class Categories
+  def self.get
+    ["Uncategorized", "My Category", "Another Category", "Third"]
+  end
 end
 
 class Toolkit
@@ -71,7 +67,7 @@ class MatterItem
       is_final: false,
       is_complete: false,
       date_due: nil,
-      category: categories.sample
+      category: Categories.get.sample
     }
   end
 end

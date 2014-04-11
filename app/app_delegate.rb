@@ -10,11 +10,8 @@ class AppDelegate < PM::Delegate
     # instantiate Toolkit API client
     @toolkit = Toolkit.new
 
-    # instantiate ChecklistScreen
-    checklist_screen = ChecklistScreen.new(nav_bar:true)
-    # load data into ChecklistScreen instance
-    checklist_screen.matter = @toolkit.matters.first
-    checklist_screen.matter_items = @toolkit.matter_items
+    matter_item_screen = MatterItemScreen.new(nav_bar: true)
+    matter_item_screen.empty = true
     
     # instantiate MasterScreen
     master_screen = MasterScreen.new
@@ -22,7 +19,7 @@ class AppDelegate < PM::Delegate
     master_screen.matter_items = @toolkit.matter_items
     
     # display the screens
-    open_split_screen master_screen, checklist_screen
+    open_split_screen master_screen, matter_item_screen
   end
 
 end

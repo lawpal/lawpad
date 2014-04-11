@@ -14,3 +14,7 @@ navigation-bar right-bar-button {
   color: #fdfdfd;
   background-left-padding: 60px;
 }
+
+.matterItemScreen {
+  background-color: #dadada;
+}
